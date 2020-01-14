@@ -12,10 +12,10 @@ import java.util.Date;
  */
 @Data
 public class Score {
-    private int crew_set_id;
+    private int crewSetId;
     private String score;
-    private BigDecimal measure_value;
-    private Date time_stamp;
-    private Date start_time;
-    private Date expiration_time;
+    private BigDecimal partsCode;
+    private Date timeStamp;
+    private Date startTime;
+    private Date expirationTime;
 }

@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @Data
 public class ProductDayAndYearPlan {
     private String periodId;
-    private String orgzCde;
+    private String orgzCode;
     private String measureCode;
     private BigDecimal measureValue;
 }
