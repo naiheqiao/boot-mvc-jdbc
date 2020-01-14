@@ -1,6 +1,6 @@
 package com.xinyuan.dp.service.impl;
 
-import com.xinyuan.dp.entity.Cron;
+import com.xinyuan.dp.entity.ProductDayAndYearPlan;
 import com.xinyuan.dp.service.IHelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -25,8 +25,8 @@ public class HelloServiceImpl implements IHelloService {
     @Override
     public List<Map<String, Object>> queryForList(){
         String query = "select * FROM eco_schedule_job";
-        RowMapper<Cron> rowMapper = new BeanPropertyRowMapper<>(Cron.class);
-        List<Cron> result = jdbcTemplate.query(query, rowMapper);
+        RowMapper<ProductDayAndYearPlan> rowMapper = new BeanPropertyRowMapper<>(ProductDayAndYearPlan.class);
+        List<ProductDayAndYearPlan> result = jdbcTemplate.query(query, rowMapper);
         return jdbcTemplate.queryForList("select * FROM eco_schedule_job");
     }
 }
